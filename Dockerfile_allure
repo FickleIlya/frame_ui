@@ -8,7 +8,7 @@ RUN apk update && \
         update-ca-certificates && \
         apk add openssl
 
-RUN wget https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/2.7.0/allure-2.7.0.tgz
+RUN wget https://github.com/allure-framework/allure2/releases/download/2.7.0/allure-2.7.0.tgz
 RUN tar -xvzf allure-2.7.0.tgz -C /
 RUN mv /allure-2.7.0/* /allure/
 RUN rm allure-2.7.0.tgz

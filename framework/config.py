@@ -42,7 +42,7 @@ class FrameworkConfigInstance:
 
     def configure_selene(self):
         section = 'selene'
-        selene.config.base_url = self.get_value(section, 'base_url', conf_default='https://gmail.com/')
+        selene.config.base_url = self.get_value(section, 'base_url', conf_default='https://www.kinopoisk.ru/s')
         selene.config.timeout = int(self.get_value(section, 'timeout', conf_default=10))
         selene.config.poll_during_waits = float(self.get_value(section, 'poll_during_waits', conf_default=0.5))
         reports_folder = self.get_value(section, 'reports_folder', conf_default='reports/selene/')
