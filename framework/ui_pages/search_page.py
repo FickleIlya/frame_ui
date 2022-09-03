@@ -5,6 +5,8 @@ from selene.browser import open_url
 from selene.support.jquery_style_selectors import s
 from selenium.webdriver.support.ui import Select
 
+from framework.ui_pages.final_search_page import FinalPage
+
 
 class SearchPage:
 
@@ -89,3 +91,5 @@ class SearchPage:
             select_where.select_by_visible_text(premiere[2])
 
         self.search_button.click()
+        final_page = FinalPage()
+        return final_page

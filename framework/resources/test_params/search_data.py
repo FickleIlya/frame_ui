@@ -1,5 +1,16 @@
 class BaseSearchData:
-    movie_title = "Мажор"
-    year = "2021"
-    actor = "Павел Прилучный"
-    country = "Россия"
+    result_movie = "Мажор. Фильм"
+    movie_title = "мажор"
+    year = ""
+    year_start = ""
+    year_end = ""
+    country = ""
+    distributor = ""
+    mpaa = ""
+    genre = ""
+    actor = ""
+    creator = []
+    premiere = []
+    fees = []
+
+
